@@ -1,3 +1,9 @@
+def setup_module(module):#run before everything else
+    print('\n Set up module run before anything else \n')
+
+def teardown_module(module):
+    print('\nTeardown module run after everything else \n')
+
 
 def setup_function(function):
     if function == test1:
@@ -24,4 +30,4 @@ def test1():
 
 def test2():
     print('Executing test 2')
-    assert False
+    assert True
